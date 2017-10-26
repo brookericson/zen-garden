@@ -8,6 +8,13 @@ h1 {
 
 aside {
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  border: 1px solid black; }
+
+div {
+  border-bottom: 1px solid black; }
+
+#zen-supporting {
+  border-bottom: none; }
 
 /*# sourceMappingURL=style.css.map */
