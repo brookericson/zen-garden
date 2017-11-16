@@ -58,86 +58,65 @@ header {
 }
 
 .summary {
-	position: absolute;
+	background:#844c93;
+	position: relative;
+	padding: 25px 0 70px;
+}
+
+.summary::before {
+	content:'';
+	height: 100%;
 	width: 100%;
-	height: 400px;
-	top: -10px;
 	background: url("images/first-mountain.svg") no-repeat center;
+	position: absolute;
 	background-size: cover;
-	margin: 0;
-	z-index: 1;
-	& p {
-		position: relative;
-		top: 200px;
-	}
+	top: -50%;
 }
 
 .preamble {
-	position: absolute;
-	width: 100%;
-	height: 1000px;
-	top:-170px;
-	background: url("images/second-mountain.svg") no-repeat center;
-	background-size: contain;
-	margin: 0;
-	padding-bottom: 50px;
-	z-index: 3;
-	& p, & h3 {
-		position: relative;
-		top: 550px;
-		width: 100%;
-		background: #754382;
-	}
+	background: #754382;
+	position: relative;
+	padding: 25px 0 70px;
 }
-//
-//.supporting{
-//	position: absolute;
-//	width: 100%;
-//	height: 800px;
-//	top:500px;
-//	background: url("images/first-hill.svg") no-repeat center;
-//	background-size: cover;
-//	margin: 0;
-//	padding-bottom: 50px;
-//	z-index: 5;
-//	& p, & h3 {
-//		position: relative;
-//		top: 300px;
-//		width: 100%;
-//		background: #4a2a52;
-//	}
-//}
-//
-//.summary::before {
-//	content: '';
-//	display: block;
-//	height: 100vw;
-//	width: 100%;
-//	border: blue 2px solid;
-//	background: url("images/first-mountain.svg") no-repeat center;
-//	background-size: cover;
-//	z-index: -2;
-//	position: absolute;
-//	top: -37vh;
-//	margin: 0;
-//}
-//
-//.summary::after {
-//	content: '';
-//	display: block;
-//	height: 100vw;
-//	width: 100%;
-//	border: blue 2px solid;
-//	background: url("images/second-mountain.svg") no-repeat bottom;
-//		background-size: 50%;
-//	background-size: 50%;
-//	background-size: 110%;
-//	z-index: -1;
-//	position: absolute;
-//	top: -40vh;
-//	margin: 0;
-//}
 
+.preamble::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/second-mountain.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -60%;
+}
 
+.explanation{
+	background: #56335f;
+	position: relative;
+	padding: 25px 0 70px;
+}
 
+.explanation::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/second-hill.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -75%;
+}
 
+.participation{
+	background: #56335f;
+	position: relative;
+	padding: 25px 0 70px;
+}
+
+.participation::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -75%;
+}
