@@ -42,7 +42,7 @@ div {
 }
 
 header {
-	height: 25vh;
+	height: 30vh;
 	padding: 5px;
 	background-image: -ms-linear-gradient(top, #754382 0%, #FF996C 50%, #ffdb57 100%);
 
@@ -61,7 +61,7 @@ header {
 	position: absolute;
 	width: 100%;
 	height: 400px;
-	top: 0%;
+	top: -10px;
 	background: url("images/first-mountain.svg") no-repeat center;
 	background-size: cover;
 	margin: 0;
@@ -75,38 +75,38 @@ header {
 .preamble {
 	position: absolute;
 	width: 100%;
-	height: 500px;
-	top: 125px;
+	height: 1000px;
+	top:-170px;
 	background: url("images/second-mountain.svg") no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	margin: 0;
 	padding-bottom: 50px;
 	z-index: 3;
 	& p, & h3 {
 		position: relative;
-		top: 300px;
+		top: 550px;
 		width: 100%;
 		background: #754382;
 	}
 }
-
-.supporting{
-	position: absolute;
-	width: 100%;
-	height: 600px;
-	top:500px;
-	background: url("images/first-hill.svg") no-repeat center;
-	background-size: cover;
-	margin: 0;
-	padding-bottom: 50px;
-	z-index: 5;
-	& p, & h3 {
-		position: relative;
-		top: 300px;
-		width: 100%;
-		background: #4a2a52;
-	}
-}
+//
+//.supporting{
+//	position: absolute;
+//	width: 100%;
+//	height: 800px;
+//	top:500px;
+//	background: url("images/first-hill.svg") no-repeat center;
+//	background-size: cover;
+//	margin: 0;
+//	padding-bottom: 50px;
+//	z-index: 5;
+//	& p, & h3 {
+//		position: relative;
+//		top: 300px;
+//		width: 100%;
+//		background: #4a2a52;
+//	}
+//}
 //
 //.summary::before {
 //	content: '';
