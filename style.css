@@ -10,7 +10,7 @@ body {
   height: 100%; }
 
 h3, p {
-  padding: 16px;
+  padding: 16px 25px;
   margin: 0; }
 
 .page-wrapper {
@@ -32,6 +32,8 @@ div {
 
 header {
   height: 30vh;
+  width: 100%;
+  text-align: center;
   padding: 5px;
   background-image: -ms-linear-gradient(top, #754382 0%, #FF996C 50%, #ffdb57 100%);
   background-image: -moz-linear-gradient(top, #754382 0%, #FF996C 50%, #ffdb57 100%);
@@ -42,8 +44,10 @@ header {
 
 .summary {
   background: #844c93;
+  width: 100%;
   position: relative;
-  padding: 25px 0 70px; }
+  padding: 25px 0 70px;
+  z-index: 1; }
 
 .summary::before {
   content: '';
@@ -52,12 +56,14 @@ header {
   background: url("images/first-mountain.svg") no-repeat center;
   position: absolute;
   background-size: cover;
-  top: -50%; }
+  top: -50%;
+  z-index: -1; }
 
 .preamble {
   background: #754382;
   position: relative;
-  padding: 25px 0 70px; }
+  padding: 25px 0 70px;
+  z-index: 1; }
 
 .preamble::before {
   content: '';
@@ -66,12 +72,14 @@ header {
   background: url("images/second-mountain.svg") no-repeat center;
   position: absolute;
   background-size: cover;
-  top: -60%; }
+  top: -60%;
+  z-index: -1; }
 
 .explanation {
-  background: #56335f;
+  background: #4a2a52;
   position: relative;
-  padding: 25px 0 70px; }
+  padding: 25px 0 70px;
+  z-index: 1; }
 
 .explanation::before {
   content: '';
@@ -80,20 +88,102 @@ header {
   background: url("images/second-hill.svg") no-repeat center;
   position: absolute;
   background-size: cover;
-  top: -75%; }
+  top: -65%;
+  z-index: -1; }
 
 .participation {
-  background: #56335f;
+  background: #004300;
   position: relative;
-  padding: 25px 0 70px; }
+  padding: 25px 0 70px;
+  z-index: 1; }
 
 .participation::before {
   content: '';
   height: 100%;
   width: 100%;
-  background: url("images/") no-repeat center;
+  background: url("images/green-treeline2.svg") no-repeat center;
   position: absolute;
   background-size: cover;
-  top: -75%; }
+  top: -40%;
+  z-index: -1; }
+
+.benefits {
+  background: #003200;
+  position: relative;
+  padding: 25px 0 70px;
+  z-index: 1; }
+
+.benefits::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: url("images/green-treeline.svg") no-repeat center;
+  position: absolute;
+  background-size: cover;
+  top: -50%;
+  z-index: -1; }
+
+.requirements {
+  background: #001f00;
+  position: relative;
+  padding: 25px 0 70px;
+  z-index: 1; }
+
+.requirements::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: url("images/dark-treeline.svg") no-repeat center;
+  position: absolute;
+  background-size: cover;
+  top: -40%;
+  z-index: -1; }
+
+footer {
+  background: linear-gradient(#001f00, black);
+  height: 700px; }
+
+aside {
+  position: relative;
+  top: -680px; }
+
+@media screen and (min-width: 850px) {
+  p, h3 {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto; }
+
+  header {
+    height: 45vh; }
+
+  .summary {
+    padding-bottom: 90px; }
+
+  .summary::before {
+    height: 110%; }
+
+  .preamble {
+    padding-bottom: 100px; }
+
+  .preamble::before {
+    top: -65%; }
+
+  .explanation {
+    padding: 25px 0 100px; }
+
+  .explanation::before {
+    top: -75%; }
+
+  .participation {
+    padding: 25px 0 110px; }
+
+  .participation::before {
+    top: -45%; }
+
+  .benefits {
+    padding: 25px 0 100px; }
+
+  .benefits::before {
+    top: -40%; } }
 
 /*# sourceMappingURL=style.css.map */
