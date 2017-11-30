@@ -13,7 +13,7 @@ body {
 }
 
 h3, p{
-		padding: 16px;
+		padding: 16px 25px;
 		margin: 0;
 }
 .page-wrapper {
@@ -42,7 +42,9 @@ div {
 }
 
 header {
-	height: 25vh;
+	height: 30vh;
+	width: 100%;
+	text-align: center;
 	padding: 5px;
 	background-image: -ms-linear-gradient(top, #754382 0%, #FF996C 50%, #ffdb57 100%);
 
@@ -58,55 +60,139 @@ header {
 }
 
 .summary {
-	position: absolute;
+	background:#844c93;
 	width: 100%;
-	height: 400px;
-	top: 0%;
-	background: url("images/first-mountain.svg") no-repeat center;
-	background-size: cover;
-	margin: 0;
+	position: relative;
+	padding: 25px 0 70px;
 	z-index: 1;
-	& p {
-		position: relative;
-		top: 200px;
-	}
+}
+
+.summary::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/first-mountain.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -50%;
+	z-index: -1;
 }
 
 .preamble {
-	position: absolute;
-	width: 100%;
-	height: 500px;
-	top: 125px;
-	background: url("images/second-mountain.svg") no-repeat center;
-	background-size: cover;
-	margin: 0;
-	padding-bottom: 50px;
-	z-index: 3;
-	& p, & h3 {
-		position: relative;
-		top: 300px;
-		width: 100%;
-		background: #754382;
-	}
+	background: #754382;
+	position: relative;
+	padding: 25px 0 70px;
+	z-index: 1;
 }
 
-.supporting{
-	position: absolute;
+.preamble::before {
+	content:'';
+	height: 100%;
 	width: 100%;
-	height: 600px;
-	top:500px;
-	background: url("images/first-hill.svg") no-repeat center;
+	background: url("images/second-mountain.svg") no-repeat center;
+	position: absolute;
 	background-size: cover;
-	margin: 0;
-	padding-bottom: 50px;
-	z-index: 5;
-	& p, & h3 {
-		position: relative;
-		top: 300px;
-		width: 100%;
-		background: #4a2a52;
-	}
+	top: -60%;
+	z-index: -1;
 }
+
+.explanation{
+	background: #4a2a52;
+	position: relative;
+	padding: 25px 0 70px;
+	z-index: 1;
+}
+
+.explanation::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/second-hill.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -65%;
+	z-index: -1;
+}
+
+.participation{
+	background: #004300;
+	position: relative;
+	padding: 25px 0 70px;
+	z-index: 1;
+}
+
+.participation::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/green-treeline2.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -40%;
+	z-index: -1;
+}
+
+.benefits{
+	background: #003200;
+	position: relative;
+	padding: 25px 0 70px;
+	z-index: 1;
+}
+
+.benefits::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/green-treeline.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -50%;
+	z-index: -1;
+}
+
+.requirements{
+	background: #001f00;
+	position: relative;
+	padding: 25px 0 70px;
+	z-index: 1;
+}
+
+.requirements::before {
+	content:'';
+	height: 100%;
+	width: 100%;
+	background: url("images/dark-treeline.svg") no-repeat center;
+	position: absolute;
+	background-size: cover;
+	top: -40%;
+	z-index: -1;
+}
+
+footer {
+	background: linear-gradient(#001f00, black);
+	height: 700px;
+	
+}
+
+aside {
+	position: relative;
+	top: -680px;
+}
+
+@media screen and (min-width: 850px){
+	p, h3{
+		width: 100%;
+		max-width: 850px;
+		margin: 0 auto;
+	}
+	header {
+	height: 45vh;
+	}
+
+.summary {
+	padding-bottom: 90px;
+}
+<<<<<<< HEAD
 
 //
 //.summary::before {
@@ -138,7 +224,44 @@ header {
 //	top: -40vh;
 //	margin: 0;
 //}
+=======
+>>>>>>> 40dd1cbebd871aeb3cf8be62a23a53d4e3fd40a2
+
+.summary::before {
+	height: 110%;
+}
+	.preamble {
+		padding-bottom: 100px;
+	}
+
+.preamble::before {
+	top: -65%;
+}
+	.explanation{
+	padding: 25px 0 100px;
+	
+}
+
+.explanation::before {
+	top: -75%;
+}
+	
+	.participation{
+	padding: 25px 0 110px;
+}
+
+.participation::before {
+	top: -45%;
+}
+
+	.benefits{
+	padding: 25px 0 100px;
+}
+
+.benefits::before {
+	top: -40%;
+	}
 
 
-
-
+	
+}
