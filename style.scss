@@ -1,3 +1,11 @@
+@import 'partials/font-style';
+@import 'partials/color-style';
+@import 'partials/prefix-mixins';
+@import 'partials/nav-style';
+////@import 'partials/layout';
+//@import 'partials/basic-style';
+
+
 *, *::before, *::after {
 	content: '';
 	box-sizing: border-box;
@@ -10,6 +18,7 @@ html {
 body {
 	margin: 0;
 	height: 100%;
+	color: whitesmoke;
 }
 
 h3, p{
@@ -41,6 +50,19 @@ div {
 	border-bottom: none;
 }
 
+header::before{
+border-radius:50%;
+background-color: Orange;
+content: "";
+height:50vh;
+width:50vh;
+z-index:0;
+display:flex;
+position:fixed;
+left: 43%;
+top: 15%;
+}
+
 header {
 	height: 30vh;
 	width: 100%;
@@ -60,7 +82,7 @@ header {
 }
 
 .summary {
-	background:#844c93;
+	background:#be7077;
 	width: 100%;
 	position: relative;
 	padding: 25px 0 70px;
@@ -79,7 +101,8 @@ header {
 }
 
 .preamble {
-	background: #754382;
+	background: 
+#95577d;
 	position: relative;
 	padding: 25px 0 70px;
 	z-index: 1;
@@ -97,7 +120,7 @@ header {
 }
 
 .explanation{
-	background: #4a2a52;
+	background:#874e7f;
 	position: relative;
 	padding: 25px 0 70px;
 	z-index: 1;
@@ -115,7 +138,7 @@ header {
 }
 
 .participation{
-	background: #004300;
+	background:#56325f;
 	position: relative;
 	padding: 25px 0 70px;
 	z-index: 1;
@@ -133,7 +156,7 @@ header {
 }
 
 .benefits{
-	background: #003200;
+	background:#3e2344;
 	position: relative;
 	padding: 25px 0 70px;
 	z-index: 1;
@@ -151,7 +174,7 @@ header {
 }
 
 .requirements{
-	background: #001f00;
+	background:#2b1a30;
 	position: relative;
 	padding: 25px 0 70px;
 	z-index: 1;
@@ -169,7 +192,7 @@ header {
 }
 
 footer {
-	background: linear-gradient(#001f00, black);
+	background-image: linear-gradient(to top, #0a0811 0%, #FF996C 80%, #ffdb57 100%);
 	height: 700px;
 	
 }
@@ -192,40 +215,6 @@ aside {
 .summary {
 	padding-bottom: 90px;
 }
-<<<<<<< HEAD
-
-//
-//.summary::before {
-//	content: '';
-//	display: block;
-//	height: 100vw;
-//	width: 100%;
-//	border: blue 2px solid;
-//	background: url("images/first-mountain.svg") no-repeat center;
-//	background-size: cover;
-//	z-index: -2;
-//	position: absolute;
-//	top: -37vh;
-//	margin: 0;
-//}
-//
-//.summary::after {
-//	content: '';
-//	display: block;
-//	height: 100vw;
-//	width: 100%;
-//	border: blue 2px solid;
-//	background: url("images/second-mountain.svg") no-repeat bottom;
-//		background-size: 50%;
-//	background-size: 50%;
-//	background-size: 110%;
-//	z-index: -1;
-//	position: absolute;
-//	top: -40vh;
-//	margin: 0;
-//}
-=======
->>>>>>> 40dd1cbebd871aeb3cf8be62a23a53d4e3fd40a2
 
 .summary::before {
 	height: 110%;

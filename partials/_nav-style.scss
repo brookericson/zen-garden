@@ -1,0 +1,46 @@
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+
+//Links
+
+//in-line links
+
+.cd-primary-nav a:link, {
+    text-decoration: underline;
+	color: $color-2;
+}
+
+.cd-primary-nav a:hover{
+     color: lightblue;
+}
+
+.cd-primary-nav a:active{
+    color:blue;
+}
+
+//Design-links use id="Dlink"
+.cd-secondary-nav a{
+        color: lightgray;
+        text-decoration:underline; 
+    &:hover{
+        color:lightgoldenrodyellow;
+    }
+    &:visited{
+        color:rebeccapurple;
+    }
+}
+
+
+//Language Links id="Hlink"
+.Hlink a{
+    color: lightslategray;
+    &:hover{ 
+    color:lightcoral;
+  }
+    &:active {
+    text-decoration:underline;
+ }
+}

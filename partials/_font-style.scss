@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+$primary-font: 'Merriweather', serif;
+$secondary-font: 'Architects Daughter';
+$general-font:'Trebuchet MS';
+
+p {
+    font-size: 105%;
+	font-family: $primary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $secondary-font;
+}
+
+h1{
+    font-size: 300%;
+}
+
+h2{
+    font-size: 155%;
+}
+h3{
+    font-size: 155%;
+}
+
+a {
+    font-size:105%; 
+	font-family: $primary-font;
+}

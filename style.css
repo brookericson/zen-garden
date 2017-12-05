@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+p {
+  font-size: 105%;
+  font-family: "Merriweather", serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Architects Daughter"; }
+
+h1 {
+  font-size: 300%; }
+
+h2 {
+  font-size: 155%; }
+
+h3 {
+  font-size: 155%; }
+
+a {
+  font-size: 105%;
+  font-family: "Merriweather", serif; }
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+.cd-primary-nav a:link {
+  text-decoration: underline;
+  color: #403f85; }
+
+.cd-primary-nav a:hover {
+  color: lightblue; }
+
+.cd-primary-nav a:active {
+  color: blue; }
+
+.cd-secondary-nav a {
+  color: lightgray;
+  text-decoration: underline; }
+  .cd-secondary-nav a:hover {
+    color: lightgoldenrodyellow; }
+  .cd-secondary-nav a:visited {
+    color: rebeccapurple; }
+
+.Hlink a {
+  color: lightslategray; }
+  .Hlink a:hover {
+    color: lightcoral; }
+  .Hlink a:active {
+    text-decoration: underline; }
+
 *, *::before, *::after {
   content: '';
   box-sizing: border-box; }
@@ -7,7 +59,8 @@ html {
 
 body {
   margin: 0;
-  height: 100%; }
+  height: 100%;
+  color: whitesmoke; }
 
 h3, p {
   padding: 16px 25px;
@@ -30,6 +83,18 @@ div {
 #zen-supporting {
   border-bottom: none; }
 
+header::before {
+  border-radius: 50%;
+  background-color: Orange;
+  content: "";
+  height: 50vh;
+  width: 50vh;
+  z-index: 0;
+  display: flex;
+  position: fixed;
+  left: 43%;
+  top: 15%; }
+
 header {
   height: 30vh;
   width: 100%;
@@ -42,20 +107,8 @@ header {
   background-image: -webkit-linear-gradient(top, #754382 0%, #FF996C 50%, #ffdb57 100%);
   background-image: linear-gradient(to bottom, #754382 0%, #FF996C 50%, #ffdb57 100%); }
 
-header::before {
-  border-radius: 50px;
-  background-color: yellow;
-  content: "";
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  top: 68px;
-  left: 667px; }
-
 .summary {
-  background: #844c93;
+  background: #be7077;
   width: 100%;
   position: relative;
   padding: 25px 0 70px;
@@ -72,7 +125,7 @@ header::before {
   z-index: -1; }
 
 .preamble {
-  background: #754382;
+  background: #95577d;
   position: relative;
   padding: 25px 0 70px;
   z-index: 1; }
@@ -88,7 +141,7 @@ header::before {
   z-index: -1; }
 
 .explanation {
-  background: #4a2a52;
+  background: #874e7f;
   position: relative;
   padding: 25px 0 70px;
   z-index: 1; }
@@ -104,7 +157,7 @@ header::before {
   z-index: -1; }
 
 .participation {
-  background: #004300;
+  background: #56325f;
   position: relative;
   padding: 25px 0 70px;
   z-index: 1; }
@@ -120,7 +173,7 @@ header::before {
   z-index: -1; }
 
 .benefits {
-  background: #003200;
+  background: #3e2344;
   position: relative;
   padding: 25px 0 70px;
   z-index: 1; }
@@ -136,7 +189,7 @@ header::before {
   z-index: -1; }
 
 .requirements {
-  background: #001f00;
+  background: #2b1a30;
   position: relative;
   padding: 25px 0 70px;
   z-index: 1; }
@@ -152,7 +205,7 @@ header::before {
   z-index: -1; }
 
 footer {
-  background: linear-gradient(#001f00, black);
+  background-image: linear-gradient(to top, #0a0811 0%, #FF996C 80%, #ffdb57 100%);
   height: 700px; }
 
 aside {
@@ -197,63 +250,5 @@ aside {
 
   .benefits::before {
     top: -40%; } }
-
-/*li{
-  list-style-type:none;
-  width:21px;
-  height: 20px;
-  background-color: yellow;
-  border-radius: 50px;
-  position: absolute;
-  z-index:3;
-  animation: 
-    flyOver 24s infinite cubic-bezier(.39,.0,.63,1),
-    flyAround 24s infinite cubic-bezier(.39,.0,.63,1)
-}
-li:nth-of-type(2){
-  animation-fill-mode: backwards, backwards;
-  animation-duration: 12s, 15s;  
-}
-li:nth-of-type(3){
-  animation-fill-mode: backwards, backwards;
-  animation-duration: 13s, 15s;  
-}
-li:nth-of-type(4){
-  animation-fill-mode: backwards, backwards;
-  animation-duration: 8s, 10s;  
-}
-li:nth-of-type(5){
-  animation-fill-mode: backwards, backwards;
-  animation-duration: 12.5s, 10s;  
-}
-li:nth-of-type(2){
-  animation-fill-mode: backwards, backwards;
-  animation-duration: 7s, 15s;  
-}
-li:nth-of-type(6){
-  animation-fill-mode: backwards, backwards;
-  animation-duration: 6s, 10s;  
-}
-
-@keyframes flyOver{
-  0%, 100% {left: 20%;}
-  20%{left: 70%;}
-  30%{left: 50%;}
-  40%{left: 60%;}
-  50%{left: 70%;}
-  60%{left: 80%;}
-  80%{left: 90%;}
-  95%{left: 30%;}
-}
-@keyframes flyAround{
-  0%, 100%{top: 50%;}
-  15% {top: 23%;  background-color: black}
-  34% {top: 68%;background-color: yellow;}
-  50%{top:90%;background-color: black}
-  70%{top:33%;background-color: yellow;}
-  80%{top:69%; background-color: black;}
-  87%{top:75%; background-color: yellow;}
-  95%{top:50%; background-color: black;}
-}*/
 
 /*# sourceMappingURL=style.css.map */
