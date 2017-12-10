@@ -1,7 +1,7 @@
 @import 'partials/font-style';
 @import 'partials/color-style';
 @import 'partials/prefix-mixins';
-@import 'partials/nav-style';
+//@import 'partials/nav-style';
 ////@import 'partials/layout';
 //@import 'partials/basic-style';
 *,
@@ -27,9 +27,12 @@ p {
 	margin: 0;
 }
 
+ul {
+	padding: 0;
+}
+
 .page-wrapper {
-	height: 100%;
-	//	width: 85%
+	height: 100%; //	width: 85%
 	//	max-width: 850px;
 	//	margin: auto;
 }
@@ -170,7 +173,7 @@ header h2 {
 .benefits {
 	background: #3e2344;
 	position: relative;
-	padding: 25px 0 70px;
+	padding: 25px 0 120px;
 	z-index: 1;
 }
 
@@ -215,9 +218,20 @@ footer::before {
 
 footer {
 	background-image: linear-gradient(to top, #0a0811 0%, #FF996C 80%, #ffdb57 100%);
-	height: 800px;
+	height:  800px;
 	position: relative;
 	z-index: 1;
+}
+
+footer::after {
+	background: url(images/night-sky-stars.jpg);
+	width: 100%;
+	height: 780px;
+	display: block;
+	position: relative;
+	background-repeat: repeat;
+	z-index: -3;
+	opacity: .5;
 }
 
 .sidebar {
@@ -253,14 +267,14 @@ aside {
 
 	header h1 {
 		font-size: 2.8em;
-		margin-bottom: 100px;
-		
+		margin-bottom: 80px;
+
 	}
 
 	header h2 {
 		margin-bottom: 15vh;
-		font-size: 1.5em;
-		
+		font-size: 1.4em;
+
 	}
 
 	header::after {

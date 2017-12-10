@@ -18,40 +18,12 @@ h3 {
 
 a {
   font-size: 105%;
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  color: white;
+  font-style: italic; }
 
 abbr {
   text-decoration: none; }
-
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
-.cd-primary-nav a:link {
-  text-decoration: underline;
-  color: #403f85; }
-
-.cd-primary-nav a:hover {
-  color: lightblue; }
-
-.cd-primary-nav a:active {
-  color: blue; }
-
-.cd-secondary-nav a {
-  color: lightgray;
-  text-decoration: underline; }
-  .cd-secondary-nav a:hover {
-    color: lightgoldenrodyellow; }
-  .cd-secondary-nav a:visited {
-    color: rebeccapurple; }
-
-.Hlink a {
-  color: lightslategray; }
-  .Hlink a:hover {
-    color: lightcoral; }
-  .Hlink a:active {
-    text-decoration: underline; }
 
 *,
 *::before,
@@ -71,6 +43,9 @@ h3,
 p {
   padding: 16px 25px;
   margin: 0; }
+
+ul {
+  padding: 0; }
 
 .page-wrapper {
   height: 100%; }
@@ -189,7 +164,7 @@ header h2 {
 .benefits {
   background: #3e2344;
   position: relative;
-  padding: 25px 0 70px;
+  padding: 25px 0 120px;
   z-index: 1; }
 
 .benefits::before {
@@ -233,6 +208,16 @@ footer {
   position: relative;
   z-index: 1; }
 
+footer::after {
+  background: url(images/night-sky-stars.jpg);
+  width: 100%;
+  height: 780px;
+  display: block;
+  position: relative;
+  background-repeat: repeat;
+  z-index: -3;
+  opacity: .5; }
+
 .sidebar {
   border: none;
   text-align: center;
@@ -261,11 +246,11 @@ aside {
 
   header h1 {
     font-size: 2.8em;
-    margin-bottom: 100px; }
+    margin-bottom: 80px; }
 
   header h2 {
     margin-bottom: 15vh;
-    font-size: 1.5em; }
+    font-size: 1.4em; }
 
   header::after {
     background: url(images/pale-yellow-sunburst.svg) center no-repeat;
